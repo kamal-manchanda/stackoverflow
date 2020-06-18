@@ -26,6 +26,7 @@ def clean_data(df):
     # Drop rows with missing salary values
     df = df.dropna(subset=['Salary'], axis=0)
     y = df['Salary']
+    print(y)
 
     #Drop respondent and expected salary columns
     df = df.drop(['Respondent', 'ExpectedSalary', 'Salary'], axis=1)
